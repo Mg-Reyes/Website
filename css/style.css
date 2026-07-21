@@ -15,7 +15,7 @@
 .header{
     width: 100%;
     min-height: 100vh;
-    /*background-color: rgb(106, 108, 41);*/
+    background-color: rgb(106, 108, 41);
     background-image: url("../images/clock_tower.png");
     background-position: center;
     background-size: cover;

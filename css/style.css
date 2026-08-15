@@ -14,12 +14,13 @@
  ========================================================*/
 .header{
     width: 100%;
-    min-height: 100vh;
-    background-color: rgb(106, 108, 41);
+    min-height: 120vh;
+    background-color: rgb(246, 255, 0);
     background-image: url("../Images/clock_tower.png");
     background-position: center;
     background-size: cover;
     position: relative;
+
 }
 
 .nav-section{
@@ -29,10 +30,18 @@
     align-items: center;
 }
 
+/* Eye */
 .nav-logo img{
     width: 100px;
     border-radius: 20%;
+    transition: 0.4s;
 }
+
+.nav-logo img:hover{
+    border-radius: 40%;
+}
+
+/* Eye */
 
 .nav-links{
     flex: 1;
@@ -98,27 +107,39 @@
 }
 /*  -------- Header (END) -------- */
 
+.transition-header-about{
+    position: relative;
+    background-color: rgb(0, 86, 16);
+    height: 100px;
+    width: 100%;
+
+}
+
 /*=======================================================
                     ABOUT Section
  ========================================================*/
 .about{
-    padding-top: 100px;
+    background-image: url(../Images/Untitled\ design.png);
+    background-size: cover;
     text-align: center;
-    width: 80%;
-    margin: auto;
+    width: 100%;
+    min-height: 120vh;
+    padding-top: 1px;
 }
-.about h1{
-    color: rgb(0, 0, 0);
+.about h3{
+    color: rgb(235, 231, 231);
     font-size: 25px;
 }
 .about p{
-    color: white;
+    color: rgb(76, 0, 255);
     font-size: 18px;
 }
-.row{
+.about-row{
+    padding: 10%;
     margin-top: 5%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    flex-direction: column;
 }
 .row h3{
     text-align: center;
@@ -126,16 +147,15 @@
     margin: 10px;
 }
 .about-box{
-    flex-basis: 31%;
-    background:rgb(255, 213, 180);
+    background:rgb(24, 24, 24);
     border-radius: 10px;
     margin-bottom: 5%;
-    padding: 20px 12px;
+    padding: 10%;
     box-sizing: border-box;
     transition: .2s;
 }
 .about-box:hover{
-    box-shadow: 0 0 10px 0 rgb(0, 0, 0, 0.5);
+    box-shadow: 0 0 30px 0 rgba(255, 255, 255, 0.95);
     cursor: pointer;
 }
 /*  -------- About Section (END) -------- */
@@ -201,9 +221,22 @@
                     Footer Section
  ========================================================*/
  .footer{
+    display: flex;
     width: 100%;
-    height: 2vh;
+    height: 5vh;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
     background-color: rgb(12, 173, 173);
+ }
+
+ .footer ol{
+    text-align: center;
+    width: 100px;
+ }
+
+ .footer img{
+    width: 20px;
  }
 /*  -------- Footer Section (END) -------- */
 
@@ -259,7 +292,7 @@
                 About section
       ===========================*/
 
-    .row{
+    .about-row{
         flex-direction: column;
     }
 }
